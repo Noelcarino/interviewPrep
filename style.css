@@ -12,6 +12,31 @@ body {
 .content-container {
     margin: 10px auto;
     width: 90vw;
-    height: 45vh;
+    height: 65vh;
     background-color: lightblue;
+}
+.js-questions-container{
+    overflow: scroll;
+}
+#js-questions {
+    margin: 10px auto;
+    width: 75vw;
+    height: 45%;
+    background-color: white;
+}
+#questions:hover {
+    background-color: black;
+    color: white;
+}
+.js-answers{
+    margin: 10px auto;
+    width: 90%;
+    height: 45%;
+    background-color: white;
+}
+.js-questions{
+    margin: 15px auto;
+}
+.hidden {
+    visibility: hidden;
 }
