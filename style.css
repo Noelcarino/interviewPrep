@@ -1,0 +1,17 @@
+body {
+    margin: auto;
+    padding: 5px 0px;
+}
+.header-container{
+    margin: 10px auto;
+    width: 90vw;
+    height: 15vh;
+    background-color: lightblue;
+    text-align: center;
+}
+.content-container {
+    margin: 10px auto;
+    width: 90vw;
+    height: 45vh;
+    background-color: lightblue;
+}
