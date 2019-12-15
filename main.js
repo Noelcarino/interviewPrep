@@ -8,12 +8,20 @@ var jsAnswers = [
     "'==' checks only for equality in value whereas '===' is stricter equality test and returns false if either the value or the type of the two variables are different",
     "Primitive & Reference Types"
 ];
+function loadAnswer(param){
+    $(".js-answers")
+        .empty()
+        .append(jsAnswers[param]);
+}
+
 $(document).ready(function(){
+    
+
 
     $("#js-button").on("click", function(){
         for (var i = 0; i < jsQuestions.length; i++){
             $("#js-questions")
-                .append("<li id=\"questions\" class=\"js-questions\">" + jsQuestions[i] + "</li>");
+                .append("<li id=\"questions\" class=\"js-questions\" onclick=\"loadAnswer("+i+")\">" + jsQuestions[i] + "</li>");
         }
         $("#js-button").addClass("hidden");
     })
